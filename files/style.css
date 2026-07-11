@@ -1,0 +1,368 @@
+/* ============================================================
+   Diálogos com a Literatura — folha de estilo
+   Conceito: a biblioteca à noite. Fundo tinta-da-noite; o texto
+   do ensaio abre como uma página de papel envelhecido sob uma
+   luz de leitura; anotações à margem (marginália) reencenam o
+   hábito de ler com lápis na mão — o diálogo que dá nome ao blog.
+   ============================================================ */
+
+:root {
+  --ink:        #161C24;   /* fundo principal, tinta da noite */
+  --ink-soft:   #1E2632;   /* painéis um tom mais claros sobre o fundo escuro */
+  --ink-line:   #2C3646;   /* hairlines sobre fundo escuro */
+  --paper:      #F1E8D6;   /* página aberta, papel envelhecido */
+  --paper-line: #D8C9A3;   /* hairlines sobre o papel */
+  --text-paper: #2A2015;   /* tinta sobre papel */
+  --bone:       #EAE2D2;   /* texto claro sobre fundo escuro */
+  --muted:      #8B93A3;   /* texto secundário sobre fundo escuro */
+  --muted-paper:#7A6E56;   /* texto secundário sobre papel */
+  --gold:       #B8935F;   /* folha de ouro — acento primário */
+  --wine:       #7B3B3B;   /* vinho — acento da marginália */
+
+  --serif-display: 'Fraunces', Georgia, serif;
+  --serif-body:    'Source Serif 4', Georgia, serif;
+  --sans:          'Inter', -apple-system, sans-serif;
+  --hand:          'Caveat', cursive;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--bone);
+  font-family: var(--serif-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; }
+
+/* ---------- Cabeçalho / navegação ---------- */
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.75rem clamp(1.25rem, 5vw, 4rem);
+  border-bottom: 1px solid var(--ink-line);
+}
+
+.site-header a.brand {
+  font-family: var(--serif-display);
+  font-weight: 600;
+  font-size: 1.15rem;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  color: var(--bone);
+}
+
+.site-header .brand em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.site-header nav a {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--muted);
+  margin-left: 1.5rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.site-header nav a:hover { color: var(--gold); }
+
+/* ---------- Hero (index) ---------- */
+
+.hero {
+  padding: clamp(3rem, 8vw, 6rem) clamp(1.25rem, 5vw, 4rem) clamp(2.5rem, 6vw, 4rem);
+  max-width: 780px;
+}
+
+.hero .eyebrow {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-family: var(--serif-display);
+  font-weight: 600;
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  line-height: 1.08;
+  margin: 0 0 1.25rem;
+  color: var(--bone);
+}
+
+.hero h1 em { font-style: italic; color: var(--gold); font-weight: 500; }
+
+.hero p.lede {
+  font-size: 1.15rem;
+  color: var(--muted);
+  max-width: 60ch;
+  margin: 0 0 1.75rem;
+}
+
+.hero .signature {
+  font-family: var(--hand);
+  font-size: 1.3rem;
+  color: var(--gold);
+}
+
+/* ---------- Palavras-tema (a assinatura do leitor) ---------- */
+
+.theme-words {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  padding: 0 clamp(1.25rem, 5vw, 4rem) 3rem;
+  max-width: 780px;
+}
+
+.theme-words span {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  border: 1px solid var(--ink-line);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+}
+
+/* ---------- Estante de ensaios ---------- */
+
+.shelf {
+  padding: 0 clamp(1.25rem, 5vw, 4rem) 6rem;
+  max-width: 860px;
+}
+
+.shelf h2.section-label {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  border-top: 1px solid var(--ink-line);
+  padding-top: 1.5rem;
+  margin: 0 0 2rem;
+}
+
+.essay-card {
+  display: block;
+  text-decoration: none;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid var(--ink-line);
+  transition: padding-left 0.2s ease;
+}
+
+.essay-card:hover { padding-left: 0.5rem; }
+
+.essay-card .date {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+}
+
+.essay-card h3 {
+  font-family: var(--serif-display);
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--bone);
+  margin: 0.4rem 0 0.5rem;
+  line-height: 1.25;
+}
+
+.essay-card p {
+  color: var(--muted);
+  font-size: 0.98rem;
+  margin: 0;
+  max-width: 68ch;
+}
+
+.essay-card.pending {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.essay-card.pending:hover { padding-left: 0; }
+
+.essay-card .status {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  border: 1px solid var(--ink-line);
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  margin-left: 0.6rem;
+}
+
+/* ---------- Rodapé ---------- */
+
+.site-footer {
+  padding: 2.5rem clamp(1.25rem, 5vw, 4rem);
+  border-top: 1px solid var(--ink-line);
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+/* ============================================================
+   Página de ensaio — a página aberta
+   ============================================================ */
+
+.book-page-wrap {
+  background-color: var(--paper);
+  background-image:
+    radial-gradient(ellipse at center, rgba(0,0,0,0) 55%, rgba(74,56,32,0.09) 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch' result='noise'/%3E%3CfeColorMatrix in='noise' type='matrix' values='0 0 0 0 0.42 0 0 0 0 0.32 0 0 0 0 0.18 0 0 0 0.07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat, repeat;
+  background-size: 100% 100%, 220px 220px;
+  color: var(--text-paper);
+}
+
+.essay-header {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: clamp(3rem, 7vw, 5rem) clamp(1.25rem, 6vw, 3rem) 2rem;
+}
+
+.essay-header .tag {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--wine);
+}
+
+.essay-header h1 {
+  font-family: var(--serif-display);
+  font-weight: 600;
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  line-height: 1.15;
+  margin: 0.6rem 0 0.75rem;
+}
+
+.essay-header .meta {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted-paper);
+}
+
+.essay-body-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 6vw, 3rem) 5rem;
+}
+
+/* Grid de duas colunas: texto corrido à esquerda, marginália à
+   direita. Parágrafos e títulos ficam explicitamente na coluna 1;
+   as notas de leitura, na coluna 2 — o auto-placement do grid as
+   posiciona automaticamente próximas ao parágrafo em que aparecem
+   no HTML, sem precisar calcular linhas manualmente. */
+
+.essay-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 700px) 300px;
+  column-gap: 2.5rem;
+}
+
+.essay-body h2 {
+  grid-column: 1;
+  font-family: var(--serif-display);
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 2.5rem 0 1rem;
+  color: var(--text-paper);
+}
+
+.essay-body p {
+  grid-column: 1;
+  font-size: 1.08rem;
+  line-height: 1.75;
+  margin: 0 0 1.2rem;
+}
+
+.essay-body p:first-of-type::first-letter {
+  font-family: var(--serif-display);
+  font-size: 3.6rem;
+  font-weight: 600;
+  float: left;
+  line-height: 0.85;
+  padding: 0.05em 0.08em 0 0;
+  color: var(--wine);
+}
+
+/* Marginália: notas de leitura, no espírito de quem lê com um
+   lápis na mão — a prática que dá nome ao blog. */
+
+.marginnote {
+  grid-column: 2;
+  align-self: start;
+  padding-left: 1rem;
+  border-left: 2px solid var(--wine);
+  font-family: var(--hand);
+  font-size: 1.3rem;
+  line-height: 1.35;
+  color: var(--wine);
+}
+
+.marginnote .label {
+  display: block;
+  font-family: var(--sans);
+  font-style: normal;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted-paper);
+  margin-bottom: 0.3rem;
+}
+
+@media (max-width: 980px) {
+  .essay-grid {
+    grid-template-columns: 1fr;
+  }
+  .marginnote {
+    grid-column: 1;
+    margin: 0.5rem 0 1.5rem;
+    padding: 0.9rem 1rem;
+    background: rgba(123, 59, 59, 0.06);
+    border-left: 3px solid var(--wine);
+  }
+}
+
+.essay-nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem clamp(1.25rem, 6vw, 3rem) 4rem;
+  border-top: 1px solid var(--paper-line);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+}
+
+.essay-nav a {
+  text-decoration: none;
+  color: var(--wine);
+}
+
+.author-note {
+  max-width: 68ch;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--muted-paper);
+  border-top: 1px solid var(--paper-line);
+  padding-top: 1.5rem;
+  margin-top: 2.5rem;
+}
