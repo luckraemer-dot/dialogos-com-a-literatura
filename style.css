@@ -94,27 +94,27 @@ a { color: inherit; }
 }
 
 .hero-art {
-  flex: 0 1 220px;
+  flex: 0 1 170px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 1rem;
+  gap: 0.65rem;
   padding-top: 0.5rem;
 }
 
 .hero-art svg {
-  width: 130px;
+  width: 68px;
   height: auto;
 }
 
 .hero-quote {
   font-family: var(--serif-body);
   font-style: italic;
-  font-size: 0.92rem;
-  line-height: 1.6;
+  font-size: 0.8rem;
+  line-height: 1.5;
   color: var(--bone);
-  max-width: 240px;
+  max-width: 190px;
 }
 
 .hero-quote-attr {
