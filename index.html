@@ -5,6 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Diálogos com a Literatura</title>
 <meta name="description" content="Um repositório de experiências literárias — ensaios de crítica com um olhar existencialista.">
+<link rel="canonical" href="https://luckraemer-dot.github.io/dialogos-com-a-literatura/">
+<link rel="alternate" type="application/rss+xml" title="Diálogos com a Literatura" href="https://luckraemer-dot.github.io/dialogos-com-a-literatura/feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Diálogos com a Literatura">
+<meta property="og:title" content="Diálogos com a Literatura">
+<meta property="og:description" content="Um repositório de experiências literárias — ensaios de crítica com um olhar existencialista.">
+<meta property="og:url" content="https://luckraemer-dot.github.io/dialogos-com-a-literatura/">
+<meta property="og:image" content="https://luckraemer-dot.github.io/dialogos-com-a-literatura/foto.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Diálogos com a Literatura">
+<meta name="twitter:description" content="Um repositório de experiências literárias — ensaios de crítica com um olhar existencialista.">
+<meta name="twitter:image" content="https://luckraemer-dot.github.io/dialogos-com-a-literatura/foto.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -60,43 +73,52 @@
 <section class="shelf">
   <h2 class="section-label">Ensaios</h2>
 
-  <a class="essay-card" href="dom-quixote.html">
+  <div class="theme-filter" role="group" aria-label="Filtrar ensaios por tema">
+    <button type="button" class="theme-pill is-active" data-theme="todos">Todos</button>
+    <button type="button" class="theme-pill" data-theme="loucura-e-poder">Loucura e poder</button>
+    <button type="button" class="theme-pill" data-theme="criacao-e-responsabilidade">Criação e responsabilidade</button>
+    <button type="button" class="theme-pill" data-theme="julgamento-e-alienacao">Julgamento e alienação</button>
+    <button type="button" class="theme-pill" data-theme="vinganca-e-justica">Vingança e justiça</button>
+    <button type="button" class="theme-pill" data-theme="fe-e-identidade">Fé e identidade</button>
+  </div>
+
+  <a class="essay-card" href="dom-quixote.html" data-themes="loucura-e-poder fe-e-identidade">
     <span class="date">8 de julho de 2025</span>
     <h3>Dom Quixote: loucura como resistência ética na crítica cervantina ao utilitarismo</h3>
     <p>Uma leitura dos capítulos XXIII a XXXVIII da primeira parte, em que a "loucura" do fidalgo aparece não como patologia, mas como a última forma possível de manter a dignidade num mundo mercantilizado.</p>
   </a>
 
-  <a class="essay-card" href="frankenstein.html">
+  <a class="essay-card" href="frankenstein.html" data-themes="criacao-e-responsabilidade">
     <span class="date">8 de março de 2026</span>
     <h3>Frankenstein: o espelho da criação abandonada</h3>
     <p>Uma jornada pessoal pelos abismos da identidade, da culpa e da monstruosidade que construímos — e do que significa ser um criador ausente.</p>
   </a>
 
-  <a class="essay-card" href="o-estrangeiro.html">
+  <a class="essay-card" href="o-estrangeiro.html" data-themes="julgamento-e-alienacao">
     <span class="date">Fevereiro de 2026</span>
     <h3>O Estrangeiro, de Albert Camus: a condenação de existir fora da linha</h3>
     <p>Uma reflexão sobre o homem julgado não pelo que fez, mas por não chorar no enterro da própria mãe.</p>
   </a>
 
-  <a class="essay-card" href="anna-karenina.html">
+  <a class="essay-card" href="anna-karenina.html" data-themes="criacao-e-responsabilidade">
     <span class="date">6 de fevereiro de 2026</span>
     <h3>A engenharia do abismo: como Tolstói nos ensina a cair com Anna Karenina</h3>
     <p>Uma leitura existencial do romance que antecipou o século XX — ler Anna Karenina não é atividade passiva.</p>
   </a>
 
-  <a class="essay-card" href="conde-de-monte-cristo.html">
+  <a class="essay-card" href="conde-de-monte-cristo.html" data-themes="vinganca-e-justica">
     <span class="date">Julho–agosto de 2025</span>
     <h3>O Conde de Monte Cristo: vingança como espetáculo e denúncia moral</h3>
     <p>As três partes originais reunidas num só ensaio — da traição em Marselha ao ajuste de contas em Paris.</p>
   </a>
 
-  <a class="essay-card" href="o-alienista.html">
+  <a class="essay-card" href="o-alienista.html" data-themes="loucura-e-poder julgamento-e-alienacao vinganca-e-justica">
     <span class="date">28 de setembro de 2025</span>
     <h3>Em Itaguaí, a razão perdeu o juízo: por que "O Alienista" é mais atual do que nunca</h3>
     <p>A loucura, em Itaguaí, é qualquer desvio da linha reta da própria e impecável razão de quem tem o poder de definir as regras do juízo.</p>
   </a>
 
-  <a class="essay-card" href="a-cabeca-do-santo.html">
+  <a class="essay-card" href="a-cabeca-do-santo.html" data-themes="fe-e-identidade">
     <span class="date">9 de setembro de 2025</span>
     <h3>Dentro da Cabeça do Santo: uma viagem ao coração da fé e da identidade</h3>
     <p>Uma busca por identidade disfarçada de vingança — Samuel não busca a fé, a fé o escolhe.</p>
@@ -113,8 +135,32 @@
     <a href="mailto:dialogoscomliteratura@gmail.com">dialogoscomliteratura@gmail.com</a>
     <span class="footer-dot">·</span>
     <a href="https://www.tiktok.com/@1972sul" target="_blank" rel="noopener">@1972sul no TikTok</a>
+    <span class="footer-dot">·</span>
+    <a href="feed.xml">RSS</a>
   </div>
 </footer>
+
+<script>
+(function () {
+  var pills = document.querySelectorAll('.theme-pill');
+  var cards = document.querySelectorAll('.essay-card');
+  pills.forEach(function (pill) {
+    pill.addEventListener('click', function () {
+      pills.forEach(function (p) { p.classList.remove('is-active'); });
+      pill.classList.add('is-active');
+      var theme = pill.getAttribute('data-theme');
+      cards.forEach(function (card) {
+        if (theme === 'todos') {
+          card.classList.remove('is-hidden');
+          return;
+        }
+        var themes = (card.getAttribute('data-themes') || '').split(' ');
+        card.classList.toggle('is-hidden', themes.indexOf(theme) === -1);
+      });
+    });
+  });
+})();
+</script>
 
 </body>
 </html>
