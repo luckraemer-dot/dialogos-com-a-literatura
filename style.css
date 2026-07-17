@@ -461,3 +461,101 @@ a { color: inherit; }
   padding-top: 1.5rem;
   margin-top: 2.5rem;
 }
+
+/* ---------- Comentários e sugestões (envio por e-mail, moderado) ----------
+   Cada leitura recebe um convite discreto — no espírito de quem escreve
+   à margem — para que o leitor deixe um comentário. A mensagem é
+   enviada por e-mail e revisada antes de qualquer publicação; nada
+   aparece automaticamente no site. */
+
+.comment-toggle {
+  margin-top: 1.25rem;
+}
+
+.comment-toggle summary {
+  cursor: pointer;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  color: var(--wine);
+  padding: 0.35rem 0;
+}
+
+.comment-toggle summary::-webkit-details-marker { display: none; }
+.comment-toggle summary::marker { content: ""; }
+
+.comment-toggle summary .pen {
+  font-family: var(--hand);
+  font-size: 1.15rem;
+}
+
+.comment-toggle summary:hover { text-decoration: underline; }
+
+.comment-form {
+  margin-top: 0.9rem;
+  padding: 1.4rem 1.5rem;
+  max-width: 480px;
+  background: rgba(123, 59, 59, 0.05);
+  border-left: 3px solid var(--wine);
+}
+
+.comment-form p.note {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--muted-paper);
+  margin: 0 0 1rem;
+}
+
+.comment-form label {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted-paper);
+  margin-bottom: 0.3rem;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  font-family: var(--serif-body);
+  font-size: 0.95rem;
+  color: var(--text-paper);
+  background: var(--paper);
+  border: 1px solid var(--paper-line);
+  border-radius: 2px;
+  padding: 0.55rem 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+  outline: none;
+  border-color: var(--wine);
+}
+
+.comment-form textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.comment-form button {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--paper);
+  background: var(--wine);
+  border: none;
+  border-radius: 2px;
+  padding: 0.6rem 1.4rem;
+  cursor: pointer;
+}
+
+.comment-form button:hover { opacity: 0.9; }
