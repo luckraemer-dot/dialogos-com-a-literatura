@@ -1,66 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
+
   <title>Diálogos com a Literatura</title>
   <link>https://luckraemer-dot.github.io/dialogos-com-a-literatura/</link>
-  <atom:link href="https://luckraemer-dot.github.io/dialogos-com-a-literatura/feed.xml" rel="self" type="application/rss+xml" />
-  <description>Um repositório de experiências literárias — ensaios de crítica com um olhar existencialista.</description>
+  <description>Um repositório de experiências literárias — ensaios de crítica com um olhar existencialista, nascidos do hábito de ler com um lápis na mão.</description>
   <language>pt-BR</language>
+  <managingEditor>luckraemer@gmail.com (L.C.Kraemer)</managingEditor>
+  <webMaster>luckraemer@gmail.com (L.C.Kraemer)</webMaster>
+  <lastBuildDate>Wed, 15 Jul 2026 12:00:00 -0300</lastBuildDate>
+  <atom:link href="https://luckraemer-dot.github.io/dialogos-com-a-literatura/feed.xml" rel="self" type="application/rss+xml"/>
 
   <item>
-    <title>Frankenstein: O Espelho da Criação Abandonada</title>
+    <title>Raskólnikov, ou a raiva que erra o alvo</title>
+    <link>https://luckraemer-dot.github.io/dialogos-com-a-literatura/raskolnikov-a-raiva-que-erra-o-alvo.html</link>
+    <guid isPermaLink="true">https://luckraemer-dot.github.io/dialogos-com-a-literatura/raskolnikov-a-raiva-que-erra-o-alvo.html</guid>
+    <pubDate>Wed, 15 Jul 2026 12:00:00 -0300</pubDate>
+    <description><![CDATA[Uma leitura de Crime e Castigo: a teoria do "homem extraordinário" como tentativa desesperada de inventar um chão para quem não tem nenhum — e a revolta legítima que mira no alvo errado.]]></description>
+  </item>
+
+  <item>
+    <title>Frankenstein: o espelho da criação abandonada</title>
     <link>https://luckraemer-dot.github.io/dialogos-com-a-literatura/frankenstein.html</link>
-    <guid>https://luckraemer-dot.github.io/dialogos-com-a-literatura/frankenstein.html</guid>
-    <pubDate>Sun, 08 Mar 2026 00:00:00 -0300</pubDate>
-    <description>Uma jornada pessoal pelos abismos da identidade, da culpa e da monstruosidade que construímos — e do que significa ser um criador ausente.</description>
+    <guid isPermaLink="true">https://luckraemer-dot.github.io/dialogos-com-a-literatura/frankenstein.html</guid>
+    <pubDate>Sun, 08 Mar 2026 12:00:00 -0300</pubDate>
+    <description><![CDATA[Uma jornada pessoal pelos abismos da identidade, da culpa e da monstruosidade que construímos — e do que significa ser um criador ausente.]]></description>
   </item>
 
   <item>
-    <title>A Engenharia do Abismo: Como Tolstói nos Ensina a Cair com Anna Karenina</title>
-    <link>https://luckraemer-dot.github.io/dialogos-com-a-literatura/anna-karenina.html</link>
-    <guid>https://luckraemer-dot.github.io/dialogos-com-a-literatura/anna-karenina.html</guid>
-    <pubDate>Fri, 06 Feb 2026 00:00:00 -0300</pubDate>
-    <description>Uma leitura existencial do romance que antecipou o século XX — ler Anna Karenina não é atividade passiva.</description>
-  </item>
-
-  <item>
-    <title>O Estrangeiro: A Condenação de Existir Fora da Linha</title>
+    <title>O Estrangeiro, de Albert Camus: a condenação de existir fora da linha</title>
     <link>https://luckraemer-dot.github.io/dialogos-com-a-literatura/o-estrangeiro.html</link>
-    <guid>https://luckraemer-dot.github.io/dialogos-com-a-literatura/o-estrangeiro.html</guid>
-    <pubDate>Sun, 01 Feb 2026 00:00:00 -0300</pubDate>
-    <description>Uma reflexão sobre o homem julgado não pelo que fez, mas por não chorar no enterro da própria mãe.</description>
+    <guid isPermaLink="true">https://luckraemer-dot.github.io/dialogos-com-a-literatura/o-estrangeiro.html</guid>
+    <pubDate>Fri, 20 Feb 2026 12:00:00 -0300</pubDate>
+    <description><![CDATA[Uma reflexão sobre o homem julgado não pelo que fez, mas por não chorar no enterro da própria mãe.]]></description>
   </item>
 
   <item>
-    <title>Em Itaguaí, a Razão Perdeu o Juízo</title>
+    <title>A engenharia do abismo: como Tolstói nos ensina a cair com Anna Karenina</title>
+    <link>https://luckraemer-dot.github.io/dialogos-com-a-literatura/anna-karenina.html</link>
+    <guid isPermaLink="true">https://luckraemer-dot.github.io/dialogos-com-a-literatura/anna-karenina.html</guid>
+    <pubDate>Fri, 06 Feb 2026 12:00:00 -0300</pubDate>
+    <description><![CDATA[Uma leitura existencial do romance que antecipou o século XX — ler Anna Karenina não é atividade passiva.]]></description>
+  </item>
+
+  <item>
+    <title>Em Itaguaí, a razão perdeu o juízo</title>
     <link>https://luckraemer-dot.github.io/dialogos-com-a-literatura/o-alienista.html</link>
-    <guid>https://luckraemer-dot.github.io/dialogos-com-a-literatura/o-alienista.html</guid>
-    <pubDate>Sun, 28 Sep 2025 00:00:00 -0300</pubDate>
-    <description>A loucura, em Itaguaí, é qualquer desvio da linha reta da própria e impecável razão de quem tem o poder de definir as regras do juízo.</description>
+    <guid isPermaLink="true">https://luckraemer-dot.github.io/dialogos-com-a-literatura/o-alienista.html</guid>
+    <pubDate>Sun, 28 Sep 2025 12:00:00 -0300</pubDate>
+    <description><![CDATA[A loucura, em Itaguaí, é qualquer desvio da linha reta da própria e impecável razão de quem tem o poder de definir as regras do juízo.]]></description>
   </item>
 
   <item>
-    <title>Dentro da Cabeça do Santo: Uma Viagem ao Coração da Fé e da Identidade</title>
+    <title>Dentro da cabeça do santo: a construção de si como processo</title>
     <link>https://luckraemer-dot.github.io/dialogos-com-a-literatura/a-cabeca-do-santo.html</link>
-    <guid>https://luckraemer-dot.github.io/dialogos-com-a-literatura/a-cabeca-do-santo.html</guid>
-    <pubDate>Tue, 09 Sep 2025 00:00:00 -0300</pubDate>
-    <description>Uma busca por identidade disfarçada de vingança — Samuel não busca a fé, a fé o escolhe.</description>
+    <guid isPermaLink="true">https://luckraemer-dot.github.io/dialogos-com-a-literatura/a-cabeca-do-santo.html</guid>
+    <pubDate>Tue, 09 Sep 2025 12:00:00 -0300</pubDate>
+    <description><![CDATA[Um herói que se faz perdendo a carapaça, e não acumulando armadura — o avesso exato de Edmond Dantès.]]></description>
   </item>
 
   <item>
-    <title>O Conde de Monte Cristo: Vingança como Espetáculo e Denúncia Moral</title>
+    <title>O Conde de Monte Cristo: vingança como espetáculo e denúncia moral</title>
     <link>https://luckraemer-dot.github.io/dialogos-com-a-literatura/conde-de-monte-cristo.html</link>
-    <guid>https://luckraemer-dot.github.io/dialogos-com-a-literatura/conde-de-monte-cristo.html</guid>
-    <pubDate>Fri, 01 Aug 2025 00:00:00 -0300</pubDate>
-    <description>As três partes originais reunidas num só ensaio — da traição em Marselha ao ajuste de contas em Paris.</description>
+    <guid isPermaLink="true">https://luckraemer-dot.github.io/dialogos-com-a-literatura/conde-de-monte-cristo.html</guid>
+    <pubDate>Sun, 31 Aug 2025 12:00:00 -0300</pubDate>
+    <description><![CDATA[As três partes originais reunidas num só ensaio — da traição em Marselha ao ajuste de contas em Paris.]]></description>
   </item>
 
   <item>
-    <title>Dom Quixote: Loucura como Resistência Ética na Crítica Cervantina ao Utilitarismo</title>
+    <title>Dom Quixote: loucura como resistência ética na crítica cervantina ao utilitarismo</title>
     <link>https://luckraemer-dot.github.io/dialogos-com-a-literatura/dom-quixote.html</link>
-    <guid>https://luckraemer-dot.github.io/dialogos-com-a-literatura/dom-quixote.html</guid>
-    <pubDate>Tue, 08 Jul 2025 00:00:00 -0300</pubDate>
-    <description>Uma leitura dos capítulos XXIII a XXXVIII da primeira parte, em que a "loucura" do fidalgo aparece não como patologia, mas como a última forma possível de manter a dignidade num mundo mercantilizado.</description>
+    <guid isPermaLink="true">https://luckraemer-dot.github.io/dialogos-com-a-literatura/dom-quixote.html</guid>
+    <pubDate>Tue, 08 Jul 2025 12:00:00 -0300</pubDate>
+    <description><![CDATA[Uma leitura dos capítulos XXIII a XXXVIII da primeira parte, em que a "loucura" do fidalgo aparece não como patologia, mas como a última forma possível de manter a dignidade num mundo mercantilizado.]]></description>
   </item>
 
 </channel>
