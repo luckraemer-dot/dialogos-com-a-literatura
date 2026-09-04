@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dialogoscomaliteratura.com.br/sitemap.xml
