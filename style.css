@@ -15,7 +15,7 @@
   --text-paper: #2A2015;   /* tinta sobre papel */
   --bone:       #EAE2D2;   /* texto claro sobre fundo escuro */
   --muted:      #8B93A3;   /* texto secundário sobre fundo escuro */
-  --muted-paper:#7A6E56;   /* texto secundário sobre papel */
+  --muted-paper:#685C47;   /* texto secundário sobre papel */
   --gold:       #B8935F;   /* folha de ouro — acento primário */
   --wine:       #7B3B3B;   /* vinho — acento da marginália */
 
@@ -728,3 +728,56 @@ a { color: inherit; }
 }
 
 .comment-form button:hover { opacity: 0.9; }
+
+/* Etapa 1 — leitura acessível e navegação */
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 10;
+  padding: 0.75rem 1rem;
+  background: var(--paper);
+  color: var(--text-paper);
+  font-family: var(--sans);
+  transform: translateY(-200%);
+}
+.skip-link:focus { transform: translateY(0); }
+a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+}
+.site-header nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; }
+.site-header nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.5rem 0.25rem;
+  margin-left: 0;
+}
+.essay-nav a, .copy-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.5rem 0;
+}
+.copy-link {
+  background: transparent;
+  border: 0;
+  font: inherit;
+  color: var(--wine);
+  cursor: pointer;
+  text-align: left;
+}
+.copy-link:hover { text-decoration: underline; }
+.copy-status { flex-basis: 100%; overflow-wrap: anywhere; }
+.copy-status:empty { display: none; }
+.marginnote .label { font-size: 0.75rem; }
+@media (max-width: 480px) {
+  .site-header { flex-wrap: wrap; gap: 0.5rem; }
+  .site-header nav { gap: 1rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .essay-card, .theme-pill { transition: none; }
+  .essay-card:hover { padding-left: 0; }
+}

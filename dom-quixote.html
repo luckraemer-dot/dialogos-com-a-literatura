@@ -54,8 +54,11 @@
 <!-- Cloudflare Web Analytics -->
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0be1bcbd45764162afbdadc8994c6554"}'></script>
 <!-- End Cloudflare Web Analytics -->
+<script src="site.js" defer></script>
 </head>
 <body>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
 <header class="site-header">
   <a class="brand" href="index.html">Diálogos com a <em>Literatura</em></a>
@@ -65,7 +68,7 @@
   </nav>
 </header>
 
-<div class="book-page-wrap">
+<main class="book-page-wrap" id="conteudo" tabindex="-1">
 
   <div class="essay-header">
     <p class="tag">Miguel de Cervantes · Dom Quixote de la Mancha</p>
@@ -150,11 +153,12 @@
     <div class="share-links">
       <a href="https://wa.me/?text=Dom%20Quixote%3A%20loucura%20como%20resist%C3%AAncia%20%C3%A9tica%20na%20cr%C3%ADtica%20cervantina%20ao%20utilitarismo%20%E2%80%94%20Di%C3%A1logos%20com%20a%20Literatura%3A%20https%3A//dialogoscomaliteratura.com.br/dom-quixote.html" target="_blank" rel="noopener">Compartilhar no WhatsApp</a>
       <a href="mailto:?subject=Dom%20Quixote%3A%20loucura%20como%20resist%C3%AAncia%20%C3%A9tica%20na%20cr%C3%ADtica%20cervantina%20ao%20utilitarismo&amp;body=https%3A//dialogoscomaliteratura.com.br/dom-quixote.html">Compartilhar por e-mail</a>
-      <a href="#" class="copy-link" data-url="https://dialogoscomaliteratura.com.br/dom-quixote.html" onclick="navigator.clipboard.writeText(this.dataset.url);this.textContent='Link copiado';return false;">Copiar link</a>
+      <button type="button" class="copy-link" data-url="https://dialogoscomaliteratura.com.br/dom-quixote.html">Copiar link</button>
+      <span class="copy-status" role="status" aria-live="polite"></span>
     </div>
   </nav>
 
-</div>
+</main>
 
 </body>
 </html>
