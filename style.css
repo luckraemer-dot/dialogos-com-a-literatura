@@ -805,3 +805,34 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   color: var(--muted);
 }
 #ensaios { scroll-margin-top: 1.5rem; }
+
+/* Etapa 3 — sumário opcional dos ensaios longos */
+.essay-toc-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 6vw, 3rem) 2rem;
+}
+.essay-toc {
+  max-width: 68ch;
+  border-top: 1px solid var(--paper-line);
+  border-bottom: 1px solid var(--paper-line);
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.essay-toc summary {
+  min-height: 44px;
+  padding: 0.75rem 0;
+  color: var(--wine);
+  cursor: pointer;
+}
+.essay-toc ul { list-style: none; margin: 0; padding: 0 0 0.75rem; }
+.essay-toc a {
+  display: block;
+  min-height: 44px;
+  padding: 0.65rem 0;
+  color: var(--text-paper);
+  text-underline-offset: 0.2em;
+  overflow-wrap: anywhere;
+}
+.essay-body h2[id] { scroll-margin-top: 1.5rem; }
