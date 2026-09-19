@@ -86,7 +86,7 @@ a { color: inherit; }
   justify-content: space-between;
   gap: clamp(1.5rem, 4vw, 3rem);
   max-width: 1240px;
-  padding: clamp(3rem, 8vw, 6rem) clamp(1.25rem, 5vw, 4rem) clamp(2.5rem, 6vw, 4rem);
+  padding: clamp(2rem, 4vw, 3rem) clamp(1.25rem, 5vw, 4rem) clamp(2rem, 4vw, 3rem);
 }
 
 .hero-text {
@@ -781,3 +781,27 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   .essay-card, .theme-pill { transition: none; }
   .essay-card:hover { padding-left: 0; }
 }
+
+/* Etapa 2 — acesso aos ensaios na página inicial */
+.hero .hero-text { flex: 0 1 760px; max-width: 760px; }
+.hero .eyebrow { margin-top: 0; }
+.hero .signature { margin: 0 0 1rem; }
+.browse-essays {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.5rem 0;
+  color: var(--gold);
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  text-underline-offset: 0.25em;
+}
+.work-author {
+  display: block;
+  margin-top: 0.65rem;
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+#ensaios { scroll-margin-top: 1.5rem; }
